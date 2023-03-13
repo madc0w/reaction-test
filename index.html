@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<script type="text/javascript" src="main.js?v=0"></script>
+		<title>Reation Test</title>
+		<style>
+			body {
+				font-family: Lato;
+			}
+
+			#game-container {
+				margin-left: calc(50% - 200px);
+				margin-top: 20%;
+			}
+
+			#spot {
+				width: 400px;
+				height: 400px;
+				background-color: red;
+				border-radius: 200px;
+			}
+
+			.hidden {
+				display: none;
+			}
+		</style>
+	</head>
+	<body onLoad="load()">
+		<div id="results">
+			<div id="reaction-time-container">
+				Reaction time: <span id="reaction-time"></span>
+			</div>
+			<div id="mean-reaction-time-container">
+				Mean reaction time: <span id="mean-reaction-time"></span>
+			</div>
+			<hr />
+		</div>
+		<div id="game-container">
+			<div id="spot" class="hidden"></div>
+		</div>
+	</body>
+</html>
